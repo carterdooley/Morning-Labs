@@ -1,11 +1,14 @@
 //Code
-let n = 0
+let n = []
 
 
 function luckyNumbers (num){
     for (i = 0; i < num; i++) {
-        return Math.floor(Math.random() * 9);
+        n.push(Math.floor(Math.random(num) * 9));
+        if (n[i] > 0){
+            console.log(n)
+        } 
     } 
 } 
 
-console.log(luckyNumbers(4))
+luckyNumbers(2)
