@@ -14,7 +14,7 @@ const sortIndex = (numsArr) => {
             arrangedArr.push(q)
        } else if(value < arrangedArr[0]){
             arrangedArr.unshift(numsArr[i])
-       }else {
+         }else {
            for(x = 0; x < arrangedArr.length; x++){
                if(value < arrangedArr[x] && value > arrangedArr[x -1])
                arrangedArr.splice(x, 0, numsArr[i])
